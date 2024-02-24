@@ -1,6 +1,6 @@
 {
   "name": "validate-form-simple",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "validate-form is a lightweight JavaScript library for effortless HTML form validation. Easily add validation to your forms without writing lengthy and complex JavaScript code. Key features include automatic validation for text inputs, emails, textareas, customizable error messages, seamless integration with existing HTML forms, and easy customization to suit your project's needs. With validate-form, ensure users fill out forms correctly before submission, reducing errors and enhancing user experience.",
   "main": "validate-form-simple.js",
   "scripts": {
