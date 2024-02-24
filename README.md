@@ -7,4 +7,4 @@
 You can install `validate-form-simple` via npm:
 
 ```bash
-npm install validate-form
+npm install validate-form-simple
