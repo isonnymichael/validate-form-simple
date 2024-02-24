@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/isonnymichael/validate-form-simple/issues"
   },
-  "homepage": "https://github.com/isonnymichael/validate-form-simple#readme"
+  "homepage": "https://github.com/isonnymichael/validate-form-simple#readme",
+  "dependencies": {
+    "validate-input-simple": "^1.0.0"
+  }
 }

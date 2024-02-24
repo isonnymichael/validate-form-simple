@@ -1,7 +1,9 @@
+import { validateEmail, validatePhoneNumber } from 'validate-input-simple'; // Import validation functions
+
 /**
  * Validates a form identified by the given form ID.
  * 
- * @since 1.0.0
+ * @since 1.1.0
  * @param {string} formId - The ID of the form element to validate.
  */
 const validateForm = (formId) => {
@@ -16,6 +18,14 @@ const validateForm = (formId) => {
         if (input.hasAttribute('required') && !input.value.trim()) {
           isValid = false;
           showError(input, `${getFieldName(input)} must be filled`);
+        } else if (input.getAttribute('type') === 'email' && !validateEmail(input.value)) {
+          // Use validateEmail function from validate-input-simple
+          isValid = false;
+          showError(input, `Invalid email format`);
+        } else if (input.getAttribute('type') === 'tel' && !validatePhoneNumber(input.value)) {
+          // Use validatePhoneNumber function from validate-input-simple
+          isValid = false;
+          showError(input, `Invalid phone number`);
         }
       });
   
