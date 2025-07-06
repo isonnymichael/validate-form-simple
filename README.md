@@ -44,26 +44,27 @@ To clone and build the project locally:
 
 ## 📁 Project Structure
 
+```bash
 validate-form-simple/
-├── .gitignore # Git ignored files config
-├── LICENSE # License file (ISC)
-├── README.md # Project documentation
-├── bin/ # CLI entry point for command-line usage
-│ └── cli.js
-├── dist/ # Bundled output (ESM, CJS, UMD) from Microbundle
-├── example/ # Demo HTML file for testing in browser
-│ └── index.html
-├── package.json # Project metadata and scripts
-├── src/ # Source code for the library
-│ ├── index.js # Main form validation logic (entry point)
-│ ├── utils/ # Utility functions (e.g. error display, field name)
-│ │ └── helper.js
-│ └── validators/ # Field validation functions
-│ ├── email.js # Email validation logic
-│ ├── phone.js # Phone number validation logic
-│ └── index.js # Re-exports email & phone validators
-├── test/ # Unit tests for core functionality
-│ └── validate-form-simple.test.js
+├── .gitignore                   # Git ignored files config
+├── LICENSE                      # License file (ISC)
+├── README.md                    # Project documentation
+├── bin/                         # CLI entry point for command-line usage
+│   └── cli.js
+├── dist/                        # Bundled output (ESM, CJS, UMD) from Microbundle
+├── example/                     # Demo HTML file for testing in browser
+│   └── index.html
+├── package.json                 # Project metadata and scripts
+├── src/                         # Source code for the library
+│   ├── index.js                 # Main form validation logic (entry point)
+│   ├── utils/                   # Utility functions (e.g. error display, field name)
+│   │   └── helper.js
+│   └── validators/              # Field validation functions
+│       ├── email.js             # Email validation logic
+│       ├── phone.js             # Phone number validation logic
+│       └── index.js             # Re-exports email & phone validators
+├── test/                        # Unit tests for core functionality
+    └── validate-form-simple.test.js
 
 ---
 
