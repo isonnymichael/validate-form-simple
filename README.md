@@ -65,7 +65,7 @@ validate-form-simple/
 │       └── index.js             # Re-exports email & phone validators
 ├── test/                        # Unit tests for core functionality
     └── validate-form-simple.test.js
-
+```
 ---
 
 ## 📄 License
