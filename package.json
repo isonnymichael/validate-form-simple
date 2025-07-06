@@ -41,6 +41,9 @@
     "url": "https://github.com/isonnymichael/validate-form-simple/issues"
   },
   "homepage": "https://github.com/isonnymichael/validate-form-simple#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
