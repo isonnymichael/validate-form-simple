@@ -24,29 +24,37 @@ To set up the project locally:
 
 3. Install dependencies:
 
+```bash
    npm install
+```
 
 4. Build the project:
 
+```bash
    npm run build
+```
 
 5. Run tests:
 
+```bash
    npm test
+```
 
 6. Run the example in your browser:
 
+```bash
    npx serve example
+```
 
 ---
 
 ## 🧩 Types of Contributions
 
-| Type           | Description                               | GitHub Label  |
-| -------------- | ----------------------------------------- | ------------- |
-| 🐞 Bug Report  | Report unexpected or broken behavior      | `bug`         |
-| ✨ Enhancement | Improve existing functionality or code    | `enhancement` |
-| 🚀 Feature     | Add entirely new features or capabilities | `feature`     |
+| Type        | Description                               | GitHub Label  |
+| ----------- | ----------------------------------------- | ------------- |
+| Bug Report  | Report unexpected or broken behavior      | `bug`         |
+| Enhancement | Improve existing functionality or code    | `enhancement` |
+| Feature     | Add entirely new features or capabilities | `feature`     |
 
 ---
 
@@ -74,18 +82,24 @@ Want to contribute code? Follow these steps:
 2. Comment on the issue:  
    "Hi! I'd like to work on this."
 3. Wait for a maintainer to assign you.
-4. Create a new branch:
+4. Create a new branch with a name that includes the issue number. This helps everyone track what each branch is for.
 
-   git checkout -b fix/your-branch-name
+```bash
+   git checkout -b issue-#1
+```
 
 5. Make your changes.
 6. Commit using [Conventional Commits](https://www.conventionalcommits.org):
 
+```bash
    git commit -m "fix: correct email validation error message"
+```
 
 7. Push your branch:
 
-   git push origin fix/your-branch-name
+```bash
+   git push origin issue-#1
+```
 
 8. Open a Pull Request (PR) to the `master` branch.
 
@@ -108,7 +122,9 @@ We use GitHub labels to organize contributions:
 
 We use **ESLint** and **Prettier** to ensure consistent code formatting. Before committing:
 
-npm run lint
+```bash
+   npm run lint
+```
 
 Linting and formatting will also run automatically on staged files using **Husky** and **lint-staged**.
 
