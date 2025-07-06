@@ -14,6 +14,7 @@ Install via npm:
 ```bash
 npm install validate-form-simple
 ```
+
 ---
 
 ## 🛠 Development
@@ -21,25 +22,41 @@ npm install validate-form-simple
 To clone and build the project locally:
 
 1. Clone the repository:
+
 ```bash
    git clone https://github.com/isonnymichael/validate-form-simple.git
 ```
+
 2. Move into the project directory:
+
 ```bash
    cd validate-form-simple
 ```
+
 3. Install dependencies:
+
 ```bash
    npm install
 ```
+
 4. Build the project:
+
 ```bash
    npm run build
 ```
+
 5. Run the example locally in the browser:
+
 ```bash
    npx serve example
 ```
+
+6. Create a new release with changelog and version bump:
+
+```bash
+   npm run release
+```
+
 ---
 
 ## 📁 Project Structure
@@ -66,6 +83,7 @@ validate-form-simple/
 ├── test/                        # Unit tests for core functionality
     └── validate-form-simple.test.js
 ```
+
 ---
 
 ## 📄 License
