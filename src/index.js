@@ -1,3 +1,5 @@
+import { validateEmail, validatePhoneNumber } from './validators/index.js';
+
 /**
  * Validates a form identified by the given form ID.
  *
@@ -90,30 +92,6 @@ function validateForm(formId) {
   }
 }
 
-/**
- * Validate an email address.
- *
- * @param {string} email
- * @returns {boolean}
- * 
- * TODO: Move to separate file for email validation if it'll be.
- */
-function validateEmail(email) {
-  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return re.test(String(email).toLowerCase());
-}
 
-/**
- * Validate a phone number.
- *
- * @param {string} phone
- * @returns {boolean}
- * 
- * TODO: Move to separate file for phone validation if it'll be.
- */
-function validatePhoneNumber(phone) {
-  const re = /^[0-9\s()+-]{6,20}$/;
-  return re.test(String(phone));
-}
 
 export default validateForm;
