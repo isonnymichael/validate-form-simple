@@ -102,6 +102,16 @@ validate-form-simple/
 
 ---
 
+## 🧑‍💻 Contributing
+
+We welcome contributions from developers of all experience levels!
+
+If you'd like to help improve this project — whether it's fixing bugs, adding features, or improving documentation — follow our contributing guide:
+
+👉 [Read the CONTRIBUTING.md guide](./CONTRIBUTING.md)
+
+---
+
 ## 📄 License
 
 ISC License  
