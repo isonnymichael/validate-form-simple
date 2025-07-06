@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.1](https://github.com/isonnymichael/validate-form-simple/compare/v2.3.0...v2.2.1) (2025-07-06)
+
+### Bug Fixes
+
+- name package ([75a579d](https://github.com/isonnymichael/validate-form-simple/commit/75a579d1bdad6138e4c7bd1a6505f0b491c6f486))
+
 ## [2.3.0](https://github.com/isonnymichael/validate-form-simple/compare/v2.2.0...v2.3.0) (2025-07-06)
 
 ### Features
