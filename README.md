@@ -45,13 +45,19 @@ To clone and build the project locally:
    npm run build
 ```
 
-5. Run the example locally in the browser:
+5. Run test:
+
+```bash
+   npm run test
+```
+
+6. Run the example locally in the browser:
 
 ```bash
    npx serve example
 ```
 
-6. Create a new release with changelog and version bump:
+7. Create a new release with changelog and version bump:
 
 ```bash
    npm run release
@@ -66,8 +72,6 @@ validate-form-simple/
 ├── .gitignore                   # Git ignored files config
 ├── LICENSE                      # License file (ISC)
 ├── README.md                    # Project documentation
-├── bin/                         # CLI entry point for command-line usage
-│   └── cli.js
 ├── dist/                        # Bundled output (ESM, CJS, UMD) from Microbundle
 ├── example/                     # Demo HTML file for testing in browser
 │   └── index.html
