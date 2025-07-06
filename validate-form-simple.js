@@ -8,32 +8,36 @@ import { validateEmail, validatePhoneNumber } from 'validate-input-simple'; // I
  */
 const validateForm = (formId) => {
     const form = document.getElementById(formId);
-  
+    if (!form) return;  // Exit if form not found
+
     form.addEventListener('submit', (event) => {
       event.preventDefault();
+
+      // Clear previous error messages
+      form.querySelectorAll('.error-message').forEach(e => e.remove());
+
       const inputs = form.querySelectorAll('input, select, textarea');
       let isValid = true;
-  
+
       inputs.forEach(input => {
+        clearError(input);
         if (input.hasAttribute('required') && !input.value.trim()) {
           isValid = false;
           showError(input, `${getFieldName(input)} must be filled`);
         } else if (input.getAttribute('type') === 'email' && !validateEmail(input.value)) {
-          // Use validateEmail function from validate-input-simple
           isValid = false;
           showError(input, `Invalid email format`);
         } else if (input.getAttribute('type') === 'tel' && !validatePhoneNumber(input.value)) {
-          // Use validatePhoneNumber function from validate-input-simple
           isValid = false;
           showError(input, `Invalid phone number`);
         }
       });
-  
+
       if (isValid) {
         form.submit();
       }
     });
-  
+
     /**
      * Displays an error message below the input element.
      * 
@@ -53,18 +57,27 @@ const validateForm = (formId) => {
         parent.appendChild(errorMessage);
       }
     };
-  
+
     /**
-     * Returns the field name with the first letter capitalized.
+     * Clears the error message for the input element.
+     */
+    const clearError = (input) => {
+      const parent = input.parentElement;
+      const error = parent.querySelector('.error-message');
+      if (error) error.remove();
+    };
+
+    /**
+     * Returns the field name from label if available, else from id.
      * 
      * @since 1.0.0
      * @param {HTMLElement} input - The input element.
      * @returns {string} The formatted field name.
      */
     const getFieldName = (input) => {
-      if (input.id) {
-        return input.id.charAt(0).toUpperCase() + input.id.slice(1);
-      }
+      const label = form.querySelector(`label[for="${input.id}"]`);
+      if (label) return label.textContent.trim();
+      if (input.id) return input.id.charAt(0).toUpperCase() + input.id.slice(1);
       return '';
     };
 };
