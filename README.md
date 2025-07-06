@@ -51,17 +51,17 @@ To clone and build the project locally:
    npm run test
 ```
 
-6. Run the example locally in the browser:
-
-```bash
-   npx serve example
-```
-
-7. Create a new release with changelog and version bump:
+6. Create a new release with changelog and version bump:
 
 ```bash
    npm run release
 ```
+
+| Options         | Version |
+| --------------- | ------- |
+| `release:major` | `x.0.0` |
+| `release:minor` | `0.x.0` |
+| `release:patch` | `0.0.x` |
 
 ---
 
