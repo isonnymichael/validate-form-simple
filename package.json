@@ -1,6 +1,6 @@
 {
   "name": "validate-form-simple",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "validate-form is a lightweight JavaScript library for effortless HTML form validation. Easily add validation to your forms without writing lengthy and complex JavaScript code. Key features include automatic validation for text inputs, emails, textareas, customizable error messages, seamless integration with existing HTML forms, and easy customization to suit your project's needs. With validate-form, ensure users fill out forms correctly before submission, reducing errors and enhancing user experience.",
   "main": "dist/validate-form-simple.cjs.js",
   "module": "dist/validate-form-simple.esm.js",
@@ -13,7 +13,8 @@
     "build": "microbundle --name=validateForm",
     "dev": "microbundle watch",
     "test": "node test/validate-form.test.js",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "release": "standard-version"
   },
   "files": [
     "dist"
@@ -37,6 +38,7 @@
   },
   "homepage": "https://github.com/isonnymichael/validate-form-simple#readme",
   "devDependencies": {
-    "microbundle": "^0.15.1"
+    "microbundle": "^0.15.1",
+    "standard-version": "^9.5.0"
   }
 }
