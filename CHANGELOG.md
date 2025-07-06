@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/isonnymichael/validate-form-simple/compare/v2.2.0...v2.3.0) (2025-07-06)
+
+### Features
+
+- add npmrc ([7439f14](https://github.com/isonnymichael/validate-form-simple/commit/7439f1460adfeff2c59706796be4352583fb7333))
+- add npmrc to publish on package github ([8c7a121](https://github.com/isonnymichael/validate-form-simple/commit/8c7a121680aba42070b531d1f64391cb368f3876))
+
 ## [2.2.0](https://github.com/isonnymichael/validate-form-simple/compare/v2.1.0...v2.2.0) (2025-07-06)
 
 ### Features
