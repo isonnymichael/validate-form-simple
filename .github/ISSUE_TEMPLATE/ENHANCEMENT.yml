@@ -1,0 +1,38 @@
+name: "🔧 Enhancement"
+description: Suggest an improvement to an existing feature
+title: "🔧 [ENHANCEMENT] - <title>"
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      description: Briefly describe the improvement you would like to see.
+      placeholder: Describe what you'd like to enhance or improve.
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_behavior
+    attributes:
+      label: "Current Behavior"
+      description: What is the current behavior or implementation?
+      placeholder: Describe how it works now and what issues you're facing.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested_improvement
+    attributes:
+      label: "Suggested Improvement"
+      description: How would you like to improve the current feature?
+      placeholder: Describe your enhancement proposal clearly.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "Additional Context"
+      description: Add any additional context, screenshots, or links to help understand your suggestion.
+      placeholder: Related links, use cases,
