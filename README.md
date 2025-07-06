@@ -65,6 +65,18 @@ To clone and build the project locally:
 
 ---
 
+## 🏗️ Tech Stack
+
+| Layer            | Technology                       |
+| ---------------- | -------------------------------- |
+| Language         | JavaScript (ESM + CJS)           |
+| Bundler          | Microbundle                      |
+| Testing          | Jest + jsdom                     |
+| Linting & Format | ESLint + Prettier                |
+| Git Hooks        | Husky + lint-staged + Commitlint |
+| Release Tooling  | standard-version                 |
+| Package Registry | npm                              |
+
 ## 📁 Project Structure
 
 ```bash
