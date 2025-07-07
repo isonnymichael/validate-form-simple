@@ -1,1 +1,2 @@
-// TODO: export all validators function here.
+export { validateEmail } from './email.js';
+export { validatePhoneNumber } from './phone.js';
