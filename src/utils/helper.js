@@ -1,7 +1,3 @@
-//C:\OSS\FOSS_Issue\move_helper_function\src\utils\helper.js
-// TODO: add helper function to validate form.
-// src/utils/helper.js
-
 /**
  * Displays an error message below the input element.
  *

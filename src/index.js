@@ -1,6 +1,4 @@
-// C:\OSS\FOSS_Issue\move_helper_function\src\index.js
-
-import { showError, clearError, getFieldName } from "./utils/helper.js"; // Đã thêm dòng import này
+import { showError, clearError, getFieldName } from "./utils/helper.js"; 
 
 /**
  * Validates a form identified by the given form ID.
@@ -31,7 +29,7 @@ function validateForm(formId) {
 
       if (input.hasAttribute("required") && !input.value.trim()) {
         isValid = false;
-        showError(input, `${getFieldName(input, form)} must be filled`); // Đã cập nhật lời gọi getFieldName
+        showError(input, `${getFieldName(input, form)} must be filled`); 
       } else if (input.type === "email" && !validateEmail(input.value)) {
         isValid = false;
         showError(input, `Invalid email format`);
@@ -71,6 +69,6 @@ function validateForm(formId) {
     const re = /^[0-9\s()+-]{6,20}$/;
     return re.test(String(phone));
   }
-} // Dấu ngoặc nhọn đóng này là của hàm validateForm()
+} 
 
 export default validateForm;
