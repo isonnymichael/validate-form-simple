@@ -1,1 +1,22 @@
-<!-- TODO: Add example to use validate-form-simple -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Test</title>
+ </head>
+ <body>
+  <h1>Form Example</h1>
+  <form id="contactForm">
+    <label for="email">Email</label><br />
+    <input type="email" id="email" required /><br /><br />
+
+    <label for="phone">Phone</label><br />
+    <input type="tel" id="phone" required /><br /><br />
+
+    <button type="submit" onclick="validateForm(this.form.id)">Submit</button>
+  </form>
+ </body>
+</html>
+
+<script src="../dist/validate-form-simple.umd.js"></script> 
