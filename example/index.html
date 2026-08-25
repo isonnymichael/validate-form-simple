@@ -11,12 +11,24 @@
 <body>
     <div class="form-container">
         <h1>Example Form</h1>
-        <form id="contactForm">
+        <form id="contactForm" novalidate>
             <label for="email">Email</label>
-            <input type="email" id="email" required />
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@email.com"
+                required
+            />
 
             <label for="phone">Phone</label>
-            <input type="tel" id="phone" required />
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+62 812 3456 7890"
+                required
+            />
 
             <button type="submit">Submit</button>
         </form>
