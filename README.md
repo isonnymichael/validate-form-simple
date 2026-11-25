@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/logo.png" alt="Validate Form Simple Logo" width="220" />
+</p>
+
 # Validate Form Simple
 
 **validate-form-simple** is a lightweight JavaScript library for effortless HTML form validation.
